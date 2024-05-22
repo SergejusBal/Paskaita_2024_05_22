@@ -83,6 +83,8 @@ public class Generatorius {
                 case 8:
                     dirba = false;
                     break;
+                default:
+                    System.out.println("Tokio pasirinkimo nėra");
             }
         }
     }
