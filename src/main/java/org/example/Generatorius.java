@@ -71,9 +71,9 @@ public class Generatorius {
                     else {
                         grazintiKortas(z1,z2,kortuKaladė);
                         System.out.println("Kortos gražintos");
-                        break;
-                    }
 
+                    }
+                    break;
                 case 7:
                     System.out.println("Iveskite pirmo žaidėjo vardą:");
                     z1.setVardas(Custom.nuskaitytiStringVerteCon());
