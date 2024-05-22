@@ -50,8 +50,11 @@ public class Generatorius {
                 case 4:
                     if(!z1.rodytiKortas().isEmpty()) System.out.println("Kortos jau yra išdalintos, iš pradžių atiduokite kortas!");
                     else{
-                        dalinti(z1,z2,kortuKaladė);
-                        System.out.println("Kortos išdalintos");
+                        if(kortuKaladė == null) System.out.println("Pasiimkite naują kaladę");
+                        else {
+                            dalinti(z1, z2, kortuKaladė);
+                            System.out.println("Kortos išdalintos");
+                        }
                     }
                     break;
                 case 5:
@@ -64,9 +67,13 @@ public class Generatorius {
                     }
                     break;
                 case 6:
-                    grazintiKortas(z1,z2,kortuKaladė);
-                    System.out.println("Kortos gražintos");
-                    break;
+                    if(kortuKaladė == null) System.out.println("Nėra, ką gražinti");
+                    else {
+                        grazintiKortas(z1,z2,kortuKaladė);
+                        System.out.println("Kortos gražintos");
+                        break;
+                    }
+
                 case 7:
                     System.out.println("Iveskite pirmo žaidėjo vardą:");
                     z1.setVardas(Custom.nuskaitytiStringVerteCon());
